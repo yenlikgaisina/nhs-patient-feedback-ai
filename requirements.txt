@@ -1,0 +1,28 @@
+# Core data / ML
+pandas==2.2.3
+numpy==1.26.4
+scikit-learn==1.5.2
+joblib==1.4.2
+
+# NLP
+textblob==0.18.0.post0
+nltk==3.9.1
+
+# Visualisation (used by the notebook + figures)
+matplotlib==3.9.2
+seaborn==0.13.2
+wordcloud==1.9.4
+
+# Excel I/O for the NHS Choices XLS files
+openpyxl==3.1.5
+xlrd==2.0.1
+
+# Experiment tracking
+mlflow==2.17.2
+
+# App
+streamlit==1.39.0
+
+# Dev: tests + lint
+pytest==8.3.3
+ruff==0.7.4

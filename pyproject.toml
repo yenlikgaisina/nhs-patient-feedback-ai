@@ -1,0 +1,38 @@
+[project]
+name = "nhs-patient-feedback-ai"
+version = "0.2.0"
+description = "Portfolio NLP app classifying NHS-style patient feedback into service-improvement themes."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "Yenlik Gaisina" }]
+license = { file = "LICENSE" }
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]
+addopts = "-ra --strict-markers"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+extend-exclude = [
+    ".venv",
+    "notebooks",
+    "mlruns",
+    "models",
+    "data/raw",
+    "data/processed",
+]
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "W",   # pycodestyle warnings
+]
+ignore = [
+    "E501",  # line length is handled by formatter; allow long string literals
+]
